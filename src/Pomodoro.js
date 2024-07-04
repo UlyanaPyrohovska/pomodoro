@@ -10,7 +10,7 @@ function PomodoroTimer() {
         workTime: 25,
         breakTime: 5,
         longBreakTime: 30,
-        pomodoros: 5
+        pomodoros: 1
     };
     const modes = ["work", "break", "longBreak"]
     const colorTheme = ["dark", "light"]
