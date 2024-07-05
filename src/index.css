@@ -12,20 +12,12 @@ code {
     monospace;
 }
 
-.CircularProgressbar-path {
-  stroke: rgb(197, 94, 94);
-}
-
 .CircularProgressbar-trail {
   stroke: gray;
 }
 
 .CircularProgressbar-text {
   font-size: small;
-}
-
-.CircularProgressbar-background {
-  fill: green;
 }
 
 .circular-bar {
@@ -42,6 +34,11 @@ code {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.blackTheme{
+  background-color: rgb(19, 18, 25) ;
+  color: white;
+}
+
 .timer-column {
   display: flex;
   flex-direction: column;
@@ -56,20 +53,28 @@ code {
 }
 
 .action-button {
-  background-color: rgb(197, 94, 94);
   border: none;
-  color: white;
   padding: 15px 22px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
+  height: 50px;
   cursor: pointer;
   -webkit-transition-duration: 0.4s;
   /* Safari */
   transition-duration: 0.4s;
   border-radius: 5px;
+  box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.449);
+}
+
+.action-button:hover {
+  box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.594);
+}
+
+.action-button .blackTheme {
+  color: white;
 }
 
 .small-icon-button {
@@ -79,5 +84,4 @@ code {
 
 .selected-mode {
   transition-duration: 0.4s;
-  box-shadow: 0 8px 16px 0 rgba(226, 12, 12, 0.2), 0 6px 20px 0 rgba(247, 2, 2, 0.19);
 }
