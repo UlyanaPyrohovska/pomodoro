@@ -143,7 +143,7 @@ function PomodoroTimer() {
             </div>
           </CircularProgressbarWithChildren>
         </div>
-        <div className="tomato"><Tomato color={config.textColor}></Tomato><span>{pomodoroCount}</span></div>
+        <div className="tomato"><Tomato color={config.colorTheme === "black" ? "#fff" : "#000"}></Tomato><span>{pomodoroCount}</span></div>
         <div className="timer-buttons">
           <button className="action-button small-icon-button" onClick={resetTimer} style={mystyle}>
             <Restart color={config.textColor} />
